@@ -6,7 +6,7 @@ services:
       - 6770:80
 
   stassm-backend:
-    image: registry.ameow.xyz/stassm-web/stassm-backend:latest
+    image: registry.ameow.xyz/stassm-backend/stassm-backend:latest
     ports:
       - 6769:8080
     environment:
