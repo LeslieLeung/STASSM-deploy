@@ -1,0 +1,21 @@
+version: "3"
+services:
+  stassm-frontend:
+    image: registry.ameow.xyz/stassm-web/stassm-web:latest
+    ports:
+      - 6770:80
+
+  stassm-backend:
+    image: registry.ameow.xyz/stassm-web/stassm-backend:latest
+    ports:
+      - 6769:8080
+    environment:
+      - ENV=test
+
+
+  stassm-api:
+    image: registry.ameow.xyz/stassm-api/stassm-api:latest
+    ports:
+      - 5555:5555
+    environment:
+      - ENV=test
